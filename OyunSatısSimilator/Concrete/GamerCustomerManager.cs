@@ -19,13 +19,13 @@ namespace OyunSatısSimilator.concrete
 
         public override void Add(GamerCustomer gamerCustomer)
         {
-            if (_customerCheckPersonService.CheckPerson(gamerCustomer))
+            if (_customerCheckPersonService.CheckPerson(gamerCustomer)== true)
             {
                 base.Add(gamerCustomer);
             }
             else
             {
-                throw new Exception("Geçerli bir Müşteri değildir.");
+                Console.WriteLine("Geçerli bir Müşteri değildir.");
             }
           
             

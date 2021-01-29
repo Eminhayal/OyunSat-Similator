@@ -10,7 +10,7 @@ namespace OyunSatısSimilator.Entities
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public string TcNo { get; set; }
+        public long IdentityNumber { get; set; }
 
         public string SurName { get; set; }
         public DateTime DateOfBirth { get; set; }
